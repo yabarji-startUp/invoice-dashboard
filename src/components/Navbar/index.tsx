@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { createStyles, Header, Container, Group, Burger, Paper, Transition, Title, Text } from '@mantine/core';
+import { 
+  createStyles, Header, Container, Group, Burger, Paper, Transition, Title 
+} from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
 import { Link } from 'react-router-dom';
 
