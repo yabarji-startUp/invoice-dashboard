@@ -1,19 +1,43 @@
-import React from 'react';
-import NavbarHeader from '../../components/Navbar';
+import React, { useState } from 'react';
 import logo from '../../assets/images/logo.svg';
+import {
+  AppShell,
+  // Navbar,
+  Header,
+  Footer,
+  Aside,
+  Text,
+  MediaQuery,
+  Burger,
+  useMantineTheme,
+  MantineProvider,
+  Paper,
+} from '@mantine/core';
+import Navbar from '../../components/Navbar';
 
 const Home = () => {
+  const [opened, setOpened] = useState(false);
+  
   return (
-    <div className="App">
-      <NavbarHeader />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/Home/index.tsx</code> and save to reload...
-        </p>
-        <p>Env variable: {process.env.REACT_APP_ENV_TEST}</p>
-      </header>
-    </div>
+    <>
+      <MantineProvider theme={{ colorScheme: 'dark' }}>
+        <Navbar links={[
+          {
+            'link': '/',
+            'label': 'Home'
+          },
+          {
+            'link': '/create',
+            'label': 'Create Invoice'
+          }
+        ]}/>
+        <Paper style={{ height: '100vh', borderRadius: 0 }}>
+          <Text>
+      Home
+          </Text>
+        </Paper>
+      </MantineProvider>
+    </>
   );
 };
 
