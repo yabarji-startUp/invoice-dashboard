@@ -38,6 +38,7 @@ function AuthContextProvider({ children }) {
       if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') return;
       setLoginStatus(false);
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [supabase.auth]);
 
   return (
