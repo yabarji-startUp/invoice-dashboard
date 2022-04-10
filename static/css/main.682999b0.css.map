@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.682999b0.css","mappings":"AAKA,UAEE,SACA","sources":["assets/styles/index.scss"],"sourcesContent":["// local imports\n@import \"./variables\";\n@import \"../../pages/Home/\";\n\n// global styles\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n}\n"],"names":[],"sourceRoot":""}
