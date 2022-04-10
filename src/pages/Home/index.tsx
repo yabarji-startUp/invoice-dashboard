@@ -14,9 +14,14 @@ import {
   Paper,
 } from '@mantine/core';
 import Navbar from '../../components/Navbar';
+import { Navigate } from 'react-router-dom';
+import { useAuth } from '../../hooks/useAuth';
 
 const Home = () => {
+  const { isLoggedIn } = useAuth();
   const [opened, setOpened] = useState(false);
+
+  if (!isLoggedIn) return <Navigate to="/login" />;
   
   return (
     <>
