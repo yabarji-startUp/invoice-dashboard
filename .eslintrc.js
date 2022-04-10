@@ -25,7 +25,7 @@ module.exports = {
     'linebreak-style': [0, 'unix'],
     quotes: ['error', 'single'],
     // '@typescript-eslint/explicit-function-return-type': 2,
-    'max-len': ['warn', { 'code': 100 }],
+    'max-len': ['warn', { 'code': 155 }],
     semi: ['warn', 'always'],
     camelcase: [
       0,

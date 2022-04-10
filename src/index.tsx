@@ -3,17 +3,14 @@ import ReactDOM from 'react-dom';
 import './assets/styles/index.scss';
 import reportWebVitals from './reportWebVitals';
 import { Route, BrowserRouter, Routes, HashRouter } from 'react-router-dom';
-import { Home, CreateInvoice } from './pages';
+import { Home, CreateInvoice, Login } from './pages';
 import { MantineProvider } from '@mantine/core';
+import AuthContextProvider from './contexts/AuthContext';
+import { useAuth } from './hooks/useAuth';
+import App from './app';
 
 ReactDOM.render(
-  <HashRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/create" element={<CreateInvoice />} />
-      {/* <Route path="/page2" element={<Page2 />} /> */}
-    </Routes>
-  </HashRouter>,
+  <App/>,
   document.getElementById('root')
 );
 
