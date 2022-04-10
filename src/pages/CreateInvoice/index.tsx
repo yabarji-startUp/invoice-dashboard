@@ -6,7 +6,6 @@ import {
   Header,
   Footer,
   Aside,
-  Text,
   MediaQuery,
   Burger,
   useMantineTheme,
@@ -14,6 +13,7 @@ import {
   Paper,
 } from '@mantine/core';
 import Navbar from '../../components/Navbar';
+import { Page, Text, View, Document, StyleSheet, PDFViewer } from '@react-pdf/renderer';
 
 const CreateInvoice = () => {  
   return (
@@ -30,9 +30,21 @@ const CreateInvoice = () => {
           }
         ]}/>
         <Paper style={{ height: '100vh', borderRadius: 0 }}>
-          <Text>
+          {/* <Text>
       Create Invoice
-          </Text>
+          </Text> */}
+          <PDFViewer>
+            <Document>
+              <Page size="A4" >
+                <View>
+                  <Text>Section #1</Text>
+                </View>
+                <View>
+                  <Text>Section #2</Text>
+                </View>
+              </Page>
+            </Document>
+          </PDFViewer>
         </Paper>
       </MantineProvider>
     </>
