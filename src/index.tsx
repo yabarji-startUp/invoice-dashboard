@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/styles/index.scss';
+import './assets/styles/scss/main.scss';
 import reportWebVitals from './reportWebVitals';
 import { Route, BrowserRouter, Routes, HashRouter } from 'react-router-dom';
 import { Home, CreateInvoice, Login } from './pages';
