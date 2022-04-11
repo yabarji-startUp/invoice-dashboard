@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/assets/styles/index.scss"],"names":[],"mappings":"AAKA,UAEE,QAAA,CACA,SAAA","file":"main.68d948d1.chunk.css","sourcesContent":["// local imports\n@import \"./variables\";\n@import \"../../pages/Home/\";\n\n// global styles\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n}\n"]}
