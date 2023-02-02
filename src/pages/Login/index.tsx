@@ -19,28 +19,28 @@ function Login() {
   });
 
   async function loginUser2(values) {
-    // console.log(auth);
-    // let { user, error } = await supabase.auth.signIn({
-    //   email: values.email,
-    //   password: values.password,
-    // });
+     console.log(auth);
+     let { user, error } = await supabase.auth.signIn({
+       email: values.email,
+       password: values.password,
+     });
 
-    // console.log(user, error);
-    // console.log(values);
+     console.log(user, error);
+     console.log(values);
 
-    // let { user, error } = await supabase.auth.signUp({
-    //   email: values.email,
-    //   password: values.password,
-    // });
+     let { user, error } = await supabase.auth.signUp({
+       email: values.email,
+       password: values.password,
+     });
 
-    // // const { user, session, error } = await supabase.auth.signUp({
-    // //   email: 'ayush.lal@outlook.com',
-    // //   password: 'example-password',
-    // // });
+     const { user, session, error } = await supabase.auth.signUp({
+       email: 'ayush.lal@outlook.com',
+       password: 'example-password',
+     });
 
-    // console.log(user);
-    // // console.log(session);
-    // console.log(error);
+     console.log(user);
+     console.log(session);
+     console.log(error);
   }
   
   return (
